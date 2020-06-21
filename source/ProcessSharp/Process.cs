@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ProcessSharp.Management;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProcessSharp
 {
     public class Process
     {
-        public System.Diagnostics.Process Handle { get; set; }
+        public System.Diagnostics.Process Instance { get; set; }
+
+        public IntPtr Handle
+        {
+            get { return this.Instance.Handle; }
+        }
 
         public static Process Open(string name)
         {
@@ -27,7 +30,7 @@ namespace ProcessSharp
         public static Process Open(System.Diagnostics.Process process)
         {
             Process _process = new Process();
-            _process.Handle = process;
+            _process.Instance = process;
 
             return _process;
         }
