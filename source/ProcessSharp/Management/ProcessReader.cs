@@ -23,7 +23,7 @@ namespace ProcessSharp.Management
             return instance;
         }
 
-        public T Read<T>(IntPtr address)
+        public T Read<T>(IntPtr address) where T : struct
         {
             object read = default;
 

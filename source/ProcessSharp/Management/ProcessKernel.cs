@@ -8,7 +8,7 @@ namespace ProcessSharp.Management
         [DllImport("kernel32.dll")]
         private static extern IntPtr OpenProcess(int dwDesiredAccess, bool bInheritHandle, int dwProcessId);
 
-        internal static IntPtr OpenProcess(int processId, ProcessAccess access)
+        public static IntPtr OpenProcess(int processId, ProcessAccess access)
         {
             return OpenProcess((int)access, false, processId);
         }
@@ -16,7 +16,7 @@ namespace ProcessSharp.Management
         [DllImport("kernel32.dll")]
         private static extern bool ReadProcessMemory(int hProcess, long lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesRead);
 
-        internal static byte[] ReadProcessMemory(IntPtr handle, IntPtr address, int bytes)
+        public static byte[] ReadProcessMemory(IntPtr handle, IntPtr address, int bytes)
         {
             byte[] buffer = new byte[bytes];
 
@@ -25,6 +25,14 @@ namespace ProcessSharp.Management
             ReadProcessMemory(handle.ToInt32(), address.ToInt64(), buffer, buffer.Length, ref bytesRead);
 
             return buffer;
+        }
+
+        [DllImport("kernel32.dll")]
+        private static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, Int32 nSize, out IntPtr lpNumberOfBytesWritten);
+
+        public static bool WriteProcessMemory(IntPtr handle, IntPtr address, byte[] bytes)
+        {
+            return WriteProcessMemory(handle, address, bytes, bytes.Length, out var bytesread);
         }
     }
 }
