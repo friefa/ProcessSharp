@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.36
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9DC3ACC3-6850-4E0D-9A09-FF4D34A2BC89}") = "ProcessSharp", "ProcessSharp\ProcessSharp.csproj", "{9DC3ACC3-6850-4E0D-9A09-FF4D34A2BC89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessSharp", "ProcessSharp\ProcessSharp.csproj", "{9DC3ACC3-6850-4E0D-9A09-FF4D34A2BC89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessSharpExample", "ProcessSharpExample\ProcessSharpExample.csproj", "{320392EF-9C2E-454C-B5F6-D6B9F0DD4034}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9DC3ACC3-6850-4E0D-9A09-FF4D34A2BC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC3ACC3-6850-4E0D-9A09-FF4D34A2BC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC3ACC3-6850-4E0D-9A09-FF4D34A2BC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320392EF-9C2E-454C-B5F6-D6B9F0DD4034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320392EF-9C2E-454C-B5F6-D6B9F0DD4034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320392EF-9C2E-454C-B5F6-D6B9F0DD4034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320392EF-9C2E-454C-B5F6-D6B9F0DD4034}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

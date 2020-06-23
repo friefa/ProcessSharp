@@ -41,15 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Management\ProcessWriter.cs" />
     <Compile Include="Process.cs" />
     <Compile Include="ProcessCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Management\" />
-	<Compile Include="Management\ProcessKernel.cs" />
-	<Compile Include="Management\ProcessReader.cs" />
-	<Compile Include="Management\ProcessAccess.cs" />
+    <Compile Include="Management\ProcessKernel.cs" />
+    <Compile Include="Management\ProcessReader.cs" />
+    <Compile Include="Management\ProcessAccess.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

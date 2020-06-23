@@ -1,0 +1,13 @@
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\bin\Debug\ProcessSharpExample.exe.config
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\bin\Debug\ProcessSharpExample.exe
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\bin\Debug\ProcessSharpExample.pdb
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\bin\Debug\ProcessSharp.dll
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\bin\Debug\ProcessSharp.pdb
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\obj\Debug\ProcessSharpExample.csprojAssemblyReference.cache
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\obj\Debug\ProcessSharpExample.Form1.resources
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\obj\Debug\ProcessSharpExample.Properties.Resources.resources
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\obj\Debug\ProcessSharpExample.csproj.GenerateResource.cache
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\obj\Debug\ProcessSharpExample.csproj.CoreCompileInputs.cache
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\obj\Debug\ProcessSharpExample.csproj.CopyComplete
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\obj\Debug\ProcessSharpExample.exe
+C:\GitKraken\ProcessSharp\source\ProcessSharpExample\obj\Debug\ProcessSharpExample.pdb

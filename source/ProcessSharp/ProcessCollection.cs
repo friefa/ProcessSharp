@@ -25,5 +25,29 @@ namespace ProcessSharp
 
             return collection;
         }
+
+        public Process GetByName(string name)
+        {
+            Process result = null;
+
+            foreach (Process process in this.Processes)
+            {
+                if (process.Instance.ProcessName.Equals(name)) result = process;
+            }
+
+            return result;
+        }
+
+        public Process GetById(int id)
+        {
+            Process result = null;
+
+            foreach (Process process in this.Processes)
+            {
+                if (process.Instance.Id == id) result = process;
+            }
+
+            return result;
+        }
     }
 }

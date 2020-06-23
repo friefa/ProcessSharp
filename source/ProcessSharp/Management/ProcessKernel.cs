@@ -14,7 +14,7 @@ namespace ProcessSharp.Management
         }
 
         [DllImport("kernel32.dll")]
-        private static extern bool ReadProcessMemory(int hProcess, long lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesRead);
+        private static extern bool ReadProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesRead);
 
         public static byte[] ReadProcessMemory(IntPtr handle, IntPtr address, int bytes)
         {
@@ -22,7 +22,7 @@ namespace ProcessSharp.Management
 
             int bytesRead = 0;
 
-            ReadProcessMemory(handle.ToInt32(), address.ToInt64(), buffer, buffer.Length, ref bytesRead);
+            ReadProcessMemory(handle, address, buffer, buffer.Length, ref bytesRead);
 
             return buffer;
         }
